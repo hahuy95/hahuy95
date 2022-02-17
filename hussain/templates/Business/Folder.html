@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <title>{{folderName}}</title>
+
+        <div class="m-5"></div>
+
+        <div class="container">
+        <div class="row">
+            {% for files_Name in filesName %}
+                <div class="col">
+                    <img src="/static/img/{{folderName}}/{{files_Name}}" alt="..." class="d-block w-50">
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load split %}
+
+{% block content %}
+      <title>Hassain</title>
+
+        <div class="m-5"></div>
+
+        <div class="container">
+            <div class="row">
+            {% for img in imgs %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <a clss="card-img-top" href="hussain/{{img|split:"/"|slice:"1"|join:""}}/">
+                        <img src="/static/img/{{img}}" alt="..." class="img-thumbnail">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">{{img|split:"/"|slice:"1:"|join:""|split:"."|slice:"1"|join:""}}</p>
+                    </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+{% endblock content %}
