@@ -337,7 +337,7 @@
           {% for img in imgs %}
           
           <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item branding">
-            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent" href="portfolio-single-1.html">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent" href="{{img|split:"/"|slice:"1"|join:""}}/">
               <div class="h--96 position-relative">
                 <div class="overlay overlay-advanced">
                   <div class="overlay-inner bg-cover hover-zoom" style="background-image: url('static/images/portfolio/{{img}}');">

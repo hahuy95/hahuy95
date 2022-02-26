@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("hussain/<str:folderName>/", views.folder, name = "folders")
+    path("<str:folderName>/", views.folder, name = "folders")
 ]
