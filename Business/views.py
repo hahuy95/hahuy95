@@ -35,4 +35,4 @@ def folder(request, folderName):
         "folderName": folderName,
         "filesName": filesName,
     }
-    return render(request, 'Business/Folder.html', context=context)
+    return render(request, 'ProjectPage.html', context=context)
