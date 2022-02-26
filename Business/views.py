@@ -2,7 +2,7 @@ from django.shortcuts import render
 import os
 # Create your views here.
 
-os.chdir("static\images\portfolio")
+os.chdir("staticfiles/images/portfolio")
 current_dir = os.getcwd()
 
 img = []
